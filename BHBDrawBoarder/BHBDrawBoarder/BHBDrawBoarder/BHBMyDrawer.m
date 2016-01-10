@@ -106,6 +106,8 @@
     if ([event allTouches].count > 1){
         [self.superview touchesMoved:touches withEvent:event];
     }
+    [_path closePath];
+    _slayer.path = _path.CGPath;
 }
 
 /**
@@ -142,6 +144,7 @@
     [[self mutableArrayValueForKey:@"lines"] removeLastObject];
     
 }
+
 
 /**
  *  恢复
