@@ -24,6 +24,7 @@
     
     BHBDrawView * dv = [[BHBDrawView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width * 5, self.view.frame.size.height * 5)];//这里的5你可以随意改变来试试内存情况.
     dv.center = self.view.center;
+    dv.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:dv];
     
 }

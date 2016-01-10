@@ -14,17 +14,18 @@
 
 //这是是用drawRect绘图
 -(void)drawRect:(CGRect)rect{
-    CGContextRef ctx = UIGraphicsGetCurrentContext();
     
-    CGContextSaveGState(ctx);
-    [[UIColor brownColor] set];
-    CGContextFillRect(ctx, CGRectMake(0, 0, self.frame.size.width, self.frame.size.height));
-    CGContextRestoreGState(ctx);
-    
-    CGContextSaveGState(ctx);
-    [[UIColor whiteColor] set];
-    CGContextFillRect(ctx, CGRectMake(self.frame.size.width / 2 - 25, self.frame.size.height / 2 - 25, 50, 50));
-    CGContextRestoreGState(ctx);
+//    CGContextRef ctx = UIGraphicsGetCurrentContext();
+//    
+//    CGContextSaveGState(ctx);
+//    [[UIColor brownColor] set];
+//    CGContextFillRect(ctx, CGRectMake(0, 0, self.frame.size.width, self.frame.size.height));
+//    CGContextRestoreGState(ctx);
+//    
+//    CGContextSaveGState(ctx);
+//    [[UIColor whiteColor] set];
+//    CGContextFillRect(ctx, CGRectMake(self.frame.size.width / 2 - 25, self.frame.size.height / 2 - 25, 50, 50));
+//    CGContextRestoreGState(ctx);
 }
 
 //这是是用专有图层CAShapeLayer
