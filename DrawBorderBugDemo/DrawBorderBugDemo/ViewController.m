@@ -8,8 +8,13 @@
 
 #import "ViewController.h"
 #import "BHBDrawView.h"
+#import "BHBLayerDelegate.h"
 
-@interface ViewController ()
+@interface ViewController (){
+    
+    BHBLayerDelegate *_layerDeleagete;
+    CALayer          *_layer;
+}
 
 @end
 
@@ -29,5 +34,24 @@
     
 }
 
+- (IBAction)popLayerView:(id)sender {
+    
+    _layerDeleagete = [[BHBLayerDelegate alloc] init];
+    
+    //1.创建自定义的layer
+    _layer =[CALayer layer];
+    //2.设置layer的属性
+    _layer.backgroundColor= [UIColor whiteColor].CGColor;
+    _layer.frame=CGRectMake(0, 0, self.view.frame.size.width * 5, self.view.frame.size.height * 5);
+    _layer.delegate = _layerDeleagete;
+    [_layer setNeedsDisplay];
+    //3.添加layer
+    [self.view.layer addSublayer:_layer];
+}
+
+- (void)dealloc{
+    
+    _layer.delegate = nil;
+}
 
 @end

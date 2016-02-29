@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		131090991C843DBF00626E0D /* BHBLayerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 131090981C843DBF00626E0D /* BHBLayerDelegate.m */; };
 		F73E1D231C42B9DA00CC728F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F73E1D221C42B9DA00CC728F /* main.m */; };
 		F73E1D261C42B9DA00CC728F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F73E1D251C42B9DA00CC728F /* AppDelegate.m */; };
 		F73E1D291C42B9DA00CC728F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F73E1D281C42B9DA00CC728F /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		131090971C843DBF00626E0D /* BHBLayerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHBLayerDelegate.h; sourceTree = "<group>"; };
+		131090981C843DBF00626E0D /* BHBLayerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHBLayerDelegate.m; sourceTree = "<group>"; };
 		F73E1D1E1C42B9DA00CC728F /* DrawBorderBugDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawBorderBugDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73E1D221C42B9DA00CC728F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F73E1D241C42B9DA00CC728F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +109,8 @@
 			children = (
 				F73E1D541C42BA0300CC728F /* BHBDrawView.h */,
 				F73E1D551C42BA0300CC728F /* BHBDrawView.m */,
+				131090971C843DBF00626E0D /* BHBLayerDelegate.h */,
+				131090981C843DBF00626E0D /* BHBLayerDelegate.m */,
 				F73E1D241C42B9DA00CC728F /* AppDelegate.h */,
 				F73E1D251C42B9DA00CC728F /* AppDelegate.m */,
 				F73E1D271C42B9DA00CC728F /* ViewController.h */,
@@ -279,6 +284,7 @@
 				F73E1D561C42BA0300CC728F /* BHBDrawView.m in Sources */,
 				F73E1D261C42B9DA00CC728F /* AppDelegate.m in Sources */,
 				F73E1D231C42B9DA00CC728F /* main.m in Sources */,
+				131090991C843DBF00626E0D /* BHBLayerDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +510,7 @@
 				F73E1D4D1C42B9DB00CC728F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F73E1D4E1C42B9DB00CC728F /* Build configuration list for PBXNativeTarget "DrawBorderBugDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +519,7 @@
 				F73E1D501C42B9DB00CC728F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F73E1D511C42B9DB00CC728F /* Build configuration list for PBXNativeTarget "DrawBorderBugDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +528,7 @@
 				F73E1D531C42B9DB00CC728F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
